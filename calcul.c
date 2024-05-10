@@ -54,5 +54,8 @@ void division() {
 	printf("Veuillez entre votre deuxieme chiffre : ");
 	scanf("%d", &chiffreDeux);
 
-	printf("\nLe resultat de %d / %d est de %d", chiffreUn, chiffreDeux, (chiffreUn / chiffreDeux));
+	printf("\nLe resultat de %d / %d est de %f", chiffreUn, chiffreDeux, ((float)chiffreUn / chiffreDeux));
+	if (chiffreUn % chiffreDeux != 0) {
+		printf(" sont modulo est de %d", (chiffreUn % chiffreDeux));
+	}
 }
